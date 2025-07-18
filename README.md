@@ -24,4 +24,4 @@ K-Dramas and C-Dramas aesthetics loved by fans around the world.
 
 ---
 
-🔗 Made with love by Ishika.
+🔗 Made with love by Aeshika.
