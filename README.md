@@ -4,7 +4,7 @@ A dreamy, personality-based web quiz that matches users with iconic K-Drama and 
 
 ---
 
-## Overview
+## 💡Overview
 
 KxC Dream Date Finder is designed to provide an engaging experience while demonstrating frontend development skills including:
 
@@ -14,23 +14,23 @@ KxC Dream Date Finder is designed to provide an engaging experience while demons
 
 ---
 
-## Features
+##👉 Features
 
 - 10 personality-based multiple-choice questions
 - Result based on weighted scoring logic
 - Smooth UI with gradient background and visual effects
 - Lightweight, responsive layout
 - Fully client-side — no server dependencies
-
 ---
+## 🚀 how it works:
 
-## Input
+## 🗂️Input
 
 Users answer a series of 10 multiple-choice questions by clicking their preferred options. Each selection contributes to a behind-the-scenes scoring system for 8 predefined profiles.
 
 ---
 
-## Output
+##📍Output
 
 At the end of the quiz:
 - Scores are calculated dynamically using JavaScript.
@@ -39,7 +39,7 @@ At the end of the quiz:
 
 ---
 
-## Technologies Used
+##🧑‍💻Technologies Used
 
 - HTML5
 - CSS3 (with animations and gradients)
@@ -73,6 +73,6 @@ At the end of the quiz:
 
 ## Author
 
-Developed by Aeshika as part of a frontend creative project series.
+Developed by💙Aeshika as part of a frontend creative project series.
 
 ---
