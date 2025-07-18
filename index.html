@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KxC Dream Date Finder</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #ffc0cb, #dda0dd);
+      overflow: hidden;
+    }
+    .container {
+      max-width: 600px;
+      margin: 60px auto;
+      background: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      padding: 30px;
+      text-align: center;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+    h1 {
+      font-size: 32px;
+      color: #fff;
+    }
+    .question {
+      margin: 20px 0;
+      font-weight: bold;
+      color: #fff;
+    }
+    .option {
+      display: block;
+      margin: 10px 0;
+      padding: 10px;
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.4);
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+    .option:hover {
+      background: rgba(255, 255, 255, 0.6);
+    }
+    #result {
+      margin-top: 30px;
+      font-size: 20px;
+      color: #fff;
+    }
+    .heart {
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      background: red;
+      transform: rotate(45deg);
+      animation: float 10s linear infinite;
+      opacity: 0.7;
+    }
+    .heart::before, .heart::after {
+      content: '';
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      background: red;
+      border-radius: 50%;
+    }
+    .heart::before {
+      top: -7.5px;
+      left: 0;
+    }
+    .heart::after {
+      left: -7.5px;
+      top: 0;
+    }
+    @keyframes float {
+      0% {transform: translateY(100vh) rotate(45deg); opacity: 0;}
+      50% {opacity: 0.8;}
+      100% {transform: translateY(-10vh) rotate(45deg); opacity: 0;}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>KxC Dream Date Finder 💖</h1>
+    <div id="quiz">
+      <div class="question">Choose your ideal date spot:</div>
+      <div class="option" onclick="showResult(0)">Beach walk</div>
+      <div class="option" onclick="showResult(1)">Rainy cafe</div>
+      <div class="option" onclick="showResult(2)">Mountain hike</div>
+      <div class="option" onclick="showResult(3)">City lights</div>
+    </div>
+    <div id="result"></div>
+  </div>
+  <script>
+    const results = [
+      "Your dream date is Xiao Zhan 💕",
+      "Your dream date is Wang Yibo 😎",
+      "Your dream date is Park Seo Joon 🌟",
+      "Your dream date is Lee Min Ho ✨"
+    ];
+    function showResult(index) {
+      document.getElementById('result').innerText = results[index];
+    }
+    // Floating hearts
+    for (let i = 0; i < 30; i++) {
+      const heart = document.createElement('div');
+      heart.classList.add('heart');
+      heart.style.left = Math.random() * 100 + "vw";
+      heart.style.animationDuration = (5 + Math.random() * 5) + "s";
+      document.body.appendChild(heart);
+    }
+  </script>
+</body>
+</html>
